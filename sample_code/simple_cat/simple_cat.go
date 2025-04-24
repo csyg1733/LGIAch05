@@ -8,7 +8,7 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		log.Fatal("no file specified")
+		log.Fatal("no file specified") //include os.Exit(1)
 	}
 	f, err := os.Open(os.Args[1])
 	if err != nil {
